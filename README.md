@@ -1,4 +1,4 @@
-# Additional Materials for ERP Dissertation
+# Additional Materials for the Extended Research Project
 Title: Exploring Advanced Financial Applications of Large Language Models \
 Mathurin Wongwises (Student ID: 14126610) \
 MSc. Data Science (Business and Management), University of Manchester
