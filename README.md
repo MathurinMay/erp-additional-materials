@@ -23,7 +23,7 @@ The empirical setting focuses on the **U.S. healthcare sector**, specifically th
 
 The research questions are:  
 1.	Can TSFMs, namely Chronos, TimesFM, and Uni2TS, outperform a group of benchmark models in predicting daily excess returns for healthcare stocks?
-2.	How does predictive accuracy vary across different historical time windows?
+2.	How does predictive accuracy vary across different historical time windows (5, 21, 252, and 512 trading days)?
 3.	How consistently do TSFMs produce accurate predictions over time, and to what extent are they prone to overfitting or look-ahead bias?
 4.	How effective are model predictions when used to construct portfolios, and how do returns compare across models?
 
@@ -87,7 +87,7 @@ To run the experiments, users must obtain access to WRDS and prepare the followi
 
 ### 2) Preprocess
 
-Preprocessing scripts (in `src/preprocessing.py`) will filter by SIC codes for the healthcare sector, compute daily excess returns, and generate the final analysis dataset (`final_data.csv`).
+Preprocessing scripts (in `src/preprocessing.py`) will clean CRSP data, filter by SIC codes for the healthcare sector, merge with Fama-French data, compute daily excess returns, and generate the final analysis dataset (`final_data.csv`).
 ```
 python -m src.preprocessing \
   --crsp data/crsp_dataset.csv \
